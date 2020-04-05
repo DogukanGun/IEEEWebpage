@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f9a8db4c-edc3-4df0-9264-f757f3da5815" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XebG8skJbfaqYbXcEpdrgsXBTp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/media" />
+      <recent name="$PROJECT_DIR$/static/image" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/static/css" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f9a8db4c-edc3-4df0-9264-f757f3da5815" name="Default Changelist" comment="" />
+      <created>1581409408654</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581409408654</updated>
+      <workItem from="1581410179422" duration="4379000" />
+      <workItem from="1581631568683" duration="1280000" />
+      <workItem from="1581684891234" duration="2122000" />
+      <workItem from="1581799062091" duration="1455000" />
+      <workItem from="1581929253686" duration="918000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="127" key="#Inspections" timestamp="1581411027750">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="127" key="#Inspections/0.23.1440.877@0.23.1440.877" timestamp="1581411027750" />
+    <state x="164" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581710347010">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="164" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1581710347010" />
+    <state x="416" y="251" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582012892982">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="416" y="251" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1582012892982" />
+    <state x="201" y="80" key="SettingsEditor" timestamp="1581715725634">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="201" y="80" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1581715725634" />
+    <state x="362" y="276" key="com.intellij.ide.util.TipDialog" timestamp="1582480734521">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="362" y="276" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1582480734521" />
+    <state x="301" y="49" width="837" height="825" key="find.popup" timestamp="1581712556931">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="301" y="49" width="837" height="825" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1581712556931" />
+    <state x="365" y="203" width="670" height="676" key="search.everywhere.popup" timestamp="1582456833504">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="365" y="203" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1582456833504" />
+  </component>
+</project>

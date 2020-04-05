@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+{%extends 'layout.html'%}
+{%block body%}
+<script type="text/javascript" src="/static/Js/SignupLogin.js">
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/SignupLogin.css">
+<div class="form">
+
+      <ul class="tab-group">
+        {%if id == 1 %}
+        <li class="tab active"><a class="buttonGrid" href="{%url 'User:register' id=1%}">Sign Up</a></li>
+        <li class="tab"><a class="buttonGrid"  href="{%url 'User:login' id=2%}">Log In</a></li>
+        {%else%}
+        <li class="tab"><a class="buttonGrid"  href="{%url 'User:register' id=1%}">Sign Up</a></li>
+        <li class="tab active"><a class="buttonGrid"  href="{%url 'User:login' id=2%}">Log In</a></li>
+        {%endif%}
+      </ul>
+{%if id == 1 %}
+        <div id="signup">
+          <h1>Sign Up for Free</h1>
+
+          <form action="{%url 'User:register' id=1 %}" method="post">
+            {% csrf_token %}
+
+            <div class="top-row">
+            <div class="field-wrap">
+             <a style="color:#ffffff">Username :</a> {{form.username}}
+            </div>
+
+            <div class="field-wrap">
+              <a style="color:#ffffff">Name :</a> {{form.name}}
+            </div>
+          </div>
+
+          <div class="field-wrap">
+             <a style="color:#ffffff">Email :</a> {{form.email}}
+          </div>
+
+          <div class="field-wrap">
+            <a style="color:#ffffff">Password :</a>  {{form.password}}
+          </div>
+
+          <button type="submit" class="button button-block"/>Get Started</button>
+
+          </form>
+
+        </div>
+{%else%}
+        <div id="login">
+
+
+
+            {%if id == 2 %}
+            <form action="{%url 'User:mainPageBridge'%}" method="post">
+                               {% csrf_token %}
+
+               <h1>Welcome Back!</h1>
+            <div class="field-wrap">
+                <a style="color:#ffffff">Email :</a>  {{form.username}}
+          </div>
+
+          <div class="field-wrap">
+              <a style="color:#ffffff">Password :</a>  {{form.password}}
+          </div>
+                    <p class="forgot"><a href="{%url 'User:login' id=3%}">Forgot Password?</a></p>
+                    <button type="submit" class="button button-block"/>Log In</button>
+            </form>
+            {%else%}
+                <form action="{%url 'User:passwordReset'%}" method="post">
+               {% csrf_token %}
+
+               <h1>Forget Password</h1>
+             <div class="field-wrap">
+              <a style="color:#ffffff">Username : </a>  {{form.username}}
+             </div>
+                       <button type="submit" class="button button-block"/>Send Mail</button>
+                </form>
+              {%endif%}
+
+
+
+        </div>
+{%endif%}
+       </div><!-- tab-content -->
+</div>
+{%endblock body%}
+</html>
+

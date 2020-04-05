@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="/static/css/PatchPanel.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Source+Code+Pro' rel='stylesheet' type='text/css'>
+{%extends 'layout.html'%}
+{%block body%}
+
+<div class="patch-container">
+  <div class="patch-item patch-button" data-patch-panel="1"><a href="{%url 'Article:news' %}">News</a></div>
+  <div class="patch-panel" data-patch-panel="1">News</div>
+  <div class="patch-item patch-button" data-patch-panel="2"><a href="{% url 'User:projects'%}" >Project</a></div>
+  <div class="patch-panel" data-patch-panel="2">About Us</div>
+  <div class="patch-item patch-button" data-patch-panel="3"><a href="{% url 'User:about'%}">About Us</a></div>
+  <div class="patch-panel" data-patch-panel="3">Project</div>
+  <div class="patch-item patch-button wide" id="js-four" data-patch-panel="4"><a href="{% url 'User:members'%}">Members</a></div>
+  <div class="patch-panel" data-patch-panel="4">Members</div>
+  <div class="patch-item patch-button wide" id="js-five" data-patch-panel="5"><a href="{%url 'User:courses' %}">Courses</a></div>
+  <div class="patch-panel" data-patch-panel="5">Courses</div>
+  <div class="patch-item patch-button thin" data-patch-panel="6"><a href="{% url 'Contact:contactSend'%}">Contact</a></div>
+  <div class="patch-panel" data-patch-panel="6">Contact</div>
+  <div class="patch-item patch-button thin" data-patch-panel="7"><a href="{% url 'User:register' id=1 %}">Join Us</a></div>
+  <div class="patch-panel" data-patch-panel="7">Join Us</div>
+  <div class="patch-item patch-button thin" data-patch-panel="9"><a href="{%url 'User:releatedclubs'%}" >Releated Clubs</a></div>
+  <div class="patch-panel" data-patch-panel="9">Releated Clubs</div>
+  <div class="patch-item patch-button thin" data-patch-panel="8"><a href="{%url 'User:Ieee'%}">IEEE</a></div>
+  <div class="patch-panel" data-patch-panel="8">IEEE</div>
+</div>
+{%endblock body%}
+</html>

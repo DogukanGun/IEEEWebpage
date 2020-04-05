@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="/static/css/Header.css">
+<script src="/static/Js/Header.js"></script>
+<div class="wrapper">
+  <header class="page-header">
+    <nav>
+
+      <a href="{% url 'User:mainPageBridge' %}"><image src="https://upload.wikimedia.org/wikipedia/commons/5/56/Ieee_blue.jpg" style="height:40px" alt="IEE DEU"></image></a>
+
+        {%if request.user.is_authenticated %}
+            <ul>
+                <div class="svg-wrapper">
+                    <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="40" width="150" />
+                        <div id="text">
+                            <a href="{% url 'User:logout' %}"><span class="spot"></span>Logout</a>
+                        </div>
+                    </svg>
+                </div>
+            </ul>
+        {% else %}
+            <ul>
+                <div class="svg-wrapper">
+                    <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="40" width="150" />
+                        <div id="text">
+                            <a href="{% url 'User:register' id=1 %}"><span class="spot"></span>Register</a>
+                        </div>
+                    </svg>
+                </div>
+                <div class="svg-wrapper">
+                    <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="40" width="150" />
+                        <div id="text">
+                            <a href="{% url 'User:login' id=2 %}"><span class="spot"></span>Login</a>
+                        </div>
+                    </svg>
+                </div>
+            </ul>
+    <!--start button, nothing above this is necessary -->
+
+    <!--Next button -->
+        {%endif%}
+        <ul>
+        <div class="three col">
+        <div class="hamburger" id="hamburger-3">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        </div>
+        </ul>
+    </nav>
+  </header>
+</div>
+{% if messages %}
+
+                    {% for message in messages %}
+                    {% if message.tags == "info" %}
+                    <div class="alert alert-danger">{{ message }}</div>
+                    {% else %}
+                    <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+
+                    {% endif %}
+                    {% endfor %}
+
+                {% endif %}
+</html>
